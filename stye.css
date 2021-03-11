@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkblue;
+}
+.container{
+    margin: 10px auto;
+    width: 200px;
+}
+.screen{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+.keyboard{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+.iteam{
+    width: 50px;
+    outline: none;
+    border: 0.1px solid rgb(212, 212, 212);
+}
+.iteam17{
+    grid-column: 1/span 2;
+}
+.iteam19{
+    grid-column-start: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+
+}
+.iteam21{
+    grid-column-start: 2;
+    grid-row-start: 6;
+    grid-column-end: 4;
+}
+.screen .input{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 40px;
+    color: rgb(63, 63, 63);
+    z-index: 222;
+}
