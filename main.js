@@ -16,7 +16,7 @@ items.forEach(function(bnt){
             }
         else
             if(bnt.innerHTML=='%'){
-                input.innerHTML=input.innerHTML/100
+                input.innerHTML=input.innerHTML/100;
             }   
         else
             if(bnt.innerHTML=='='){
