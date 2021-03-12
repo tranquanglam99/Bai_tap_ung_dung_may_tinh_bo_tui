@@ -1,17 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    width: 300px;
-}
-.container{
+
+.frames{
     width: 280px;
     margin-top: 50px;
     margin-left: 50px;
-    background-color: #0cf;
-    border: 10px solid #0cf;
+    background-color: #999;
+    border: 10px solid #999;
 }
 .screen{
     background-color: white;
@@ -26,7 +19,7 @@ body{
     right: 5px;
     font-size: 40px;
     color: rgb(63, 63, 63);
-    z-index: 222;
+    size: 100%;  
 }
 .keyboard{
     width: 100%;
@@ -41,7 +34,7 @@ body{
 }
 .item:hover{
     background-color: rgb(182, 152, 182);
-    cursor: pointer;
+    
 }
 .item17{
     grid-column-start: 1;

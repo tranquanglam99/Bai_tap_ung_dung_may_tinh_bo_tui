@@ -3,9 +3,9 @@ var items=Array.from(document.querySelectorAll('.item'));
 items.forEach(function(bnt){
     bnt.addEventListener('click',function(){
         if(input.innerHTML=='0')
-        input.innerHTML='0';
-        if(bnt.innerHTML=='AC')
         input.innerHTML='';
+        if(bnt.innerHTML=='AC')
+        input.innerHTML='0';
         else
             if(bnt.innerHTML=='DEL'){
                 var arrtext=Array.from(input.innerHTML);
