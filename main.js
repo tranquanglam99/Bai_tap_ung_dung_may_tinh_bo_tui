@@ -1,13 +1,13 @@
 var input=document.querySelector('.input');
 var items=Array.from(document.querySelectorAll('.item'));
-items.forEach(function(bnt){
-    bnt.addEventListener('click',function(){
+items.forEach(function(data){
+    data.addEventListener('click',function(){
         if(input.innerHTML=='0')
         input.innerHTML='';
-        if(bnt.innerHTML=='AC')
+        if(data.innerHTML=='AC')
         input.innerHTML='0';
         else
-            if(bnt.innerHTML=='DEL'){
+            if(data.innerHTML=='DEL'){
                 var arrtext=Array.from(input.innerHTML);
                 arrtext.splice(arrtext.length-1,1);
                 if(arrtext.length!=0)
@@ -15,14 +15,14 @@ items.forEach(function(bnt){
                 else input.innerHTML= '0';
             }
         else
-            if(bnt.innerHTML=='%'){
+            if(data.innerHTML=='%'){
                 input.innerHTML=input.innerHTML/100;
             }
         else
-            if(bnt.innerHTML=='='){
+            if(data.innerHTML=='='){
                 input.innerHTML=eval(input.innerHTML);
             }
         else
-            input.innerHTML+=bnt.innerHTML;
+            input.innerHTML+=data.innerHTML;
     })
 })
