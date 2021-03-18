@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .frames{
     width: 500px;
     height: 610px;
@@ -27,7 +32,7 @@
     font-size: 40px;  
 }
 .keyboard{
-    height: 79%;
+    height: 92%;
     margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px;
@@ -44,13 +49,13 @@
 .item:hover{
     background-color: rgb(182, 152, 182);   
 }
-.item21 {
+.item17 {
     grid-column: 1 / span 2
 }
-.item23 {
+.item19 {
     grid-column:4;
-    grid-row:6 / span 2
+    grid-row:5 / span 2
 }
-.item25 {
+.item21 {
     grid-column: 2 / span 2;
 }
